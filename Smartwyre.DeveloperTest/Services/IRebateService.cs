@@ -4,5 +4,6 @@ namespace Smartwyre.DeveloperTest.Services;
 
 public interface IRebateService
 {
-    CalculateRebateResult Calculate(CalculateRebateRequest request);
+    // Updated return type to RebateResult which extends RebateCalculation and includes additional properties for the result of the rebate calculation
+    RebateResult Calculate(CalculateRebateRequest request);
 }
